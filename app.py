@@ -11,8 +11,9 @@ if st.button("Run Today's Pipeline"):
 
 # Show sentiment of today if exists
 try:
-    today_df = pd.read_csv("data/processed/today_final.csv")
+    today_df = pd.read_csv("final_data(1).csv")
     st.subheader("📊 Today's Sentiment")
     st.dataframe(today_df)
 except:
     st.info("Pipeline belum dijalankan hari ini.")
+
